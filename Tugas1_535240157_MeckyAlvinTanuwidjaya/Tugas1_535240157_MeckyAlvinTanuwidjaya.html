@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Biodata</title>
+  <style>
+    body { /* style untuk seluruh halaman */
+      font-family: Arial, sans-serif; /* Font yang mudah dibaca */
+      margin: 0;  /* Hilangkan margin default */
+      padding: 0;     /* Hilangkan padding default */
+      line-height: 1.6; /* Spasi antar baris */
+      background: #f4f4f4;  /* untuk menambahkan Warna latar belakang*/
+    }
+
+    header { /* style untuk header */
+      background: #0077b6;  /* Warna biru */
+      color: white;     /* Warna teks putih */
+      padding: 20px;  /* Padding di sekitar teks */
+      text-align: center;       /* Teks di tengah */
+    }
+
+    .container {      /* style untuk kontainer utama */
+      display: flex; /* Gunakan Flexbox untuk tata letak */ 
+      gap: 20px;          /* Jarak antar elemen */
+      padding: 20px;      /* Padding di sekitar kontainer */
+      max-width: 1000px;      /* Lebar maksimum kontainer */
+      margin: auto;       /* Pusatkan kontainer */
+    }
+
+    .profile-pic { /* style untuk foto profil */
+      flex: 1; /* Foto mengambil 1 bagian dari 3 */
+      text-align: center; /* gambar di tengah */
+    }
+
+    .profile-pic img { /* style untuk gambar */
+      max-width: 200px; /* Lebar maksimum gambar */
+      border: 4px solid #000000; /* Border hitam */
+      border-radius: 0; /* Foto jadi kotak */
+    }
+
+    .bio { /* style untuk bio */
+      flex: 2; /* Bio mengambil 2 bagian dari 3 */
+      background: white; /* Latar belakang putih */
+      padding: 20px;  /* Padding di sekitar teks */
+      border-radius: 10px; /* Sudut membulat */
+      box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Bayangan halus */
+      text-align: left;   /* Teks rata kiri */
+    }
+
+    .bio h3 { /* style untuk judul Data Diri */
+      text-align: center; /* Judul Data Diri di tengah */
+    } /* style untuk tabel data diri */
+
+    table {
+      width: 100%;    /* Lebar tabel 100% dari kontainer */
+      border-collapse: collapse; /* Hilangkan jarak antar border */
+      margin-top: 15px; /* Jarak atas tabel */
+    }
+
+    table, th, td { /* Border untuk tabel, th, dan td */
+      border: 1px solid #ddd; /* Border abu-abu muda */
+      padding: 8px; /* Padding di dalam sel */
+    }
+
+    th { /* style untuk header tabel */
+      background: #0077b6; /* Warna biru */
+      color: white; /* Teks putih */
+    }
+
+    /* Media Query untuk Tablet */
+    @media (max-width: 768px) {   /* Jika lebar layar kurang dari 768px */
+      .container { /* Ubah tata letak kontainer */
+        flex-direction: column; /* Elemen ditumpuk secara vertikal */
+        text-align: center; /* Teks di tengah */
+      }
+
+      .bio { /* Ubah style bio */
+        margin-top: 20px; /* Jarak atas bio */
+      } 
+    }
+
+    /* Media Query untuk HP */
+    @media (max-width: 480px) { /* Jika lebar layar kurang dari 480px */
+      header { /* Ubah style header */
+        font-size: 16px; /* Ukuran font lebih kecil */
+        padding: 15px; /* Padding lebih kecil */
+      }
+
+      .profile-pic img { /* Ubah ukuran gambar */
+        max-width: 120px; /* Lebar maksimum gambar lebih kecil */
+      }
+
+      .bio { /* Ubah style bio */
+        font-size: 14px; /* Ukuran font lebih kecil */
+        padding: 15px; /* Padding lebih kecil */
+      }
+      .data { /* Ubah style data diri */
+        text-align: center; /* Teks di tengah */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header> <!--Header halaman -->
+    <h1>Profil Biodata</h1> <!-- Judul halaman -->
+  </header>
+
+  <div class="container"> <!-- Kontainer utama -->
+    <div class="profile-pic"> <!-- Bagian foto profil -->
+      <img src="profile.jpg" alt="Foto Profil">
+    </div>
+    <div class="bio"> <!-- Bagian bio -->
+      <h2>Mecky Alvin Tanuwidjaya</h2>  <!-- Nama lengkap -->
+      <p>Seorang mahasiswa yang sedang mempelajari Web Development dan Frontend. Tertarik dengan desain web, optimasi SEO, serta machine learning.</p>
+      <h3>Data Diri</h3>
+      <table>
+        <tr>
+          <th>Nama</th> <!--Header tabel -->
+          <td>Mecky Alvin Tanuwidjaya</td><!-- Data tabel -->
+        </tr>
+        <tr>
+          <th>NIM</th> <!-- Header tabel -->
+          <td>535240157</td> <!--Data tabel -->
+        </tr>
+        <tr>
+          <th>Jurusan</th> <!-- Header tabel -->
+          <td>Teknik Informatika</td> <!-- Data tabel -->
+        </tr>
+        <tr>
+          <th>Fakultas</th>   <!-- Header tabel -->
+          <td>Teknologi Informasi</td> <!-- Data tabel -->
+        </tr>
+        <tr>
+          <th>Universitas</th> <!-- Header tabel -->
+          <td>Universitas Tarumanagara</td> <!-- Data tabel -->
+        </tr>
+        <tr>
+          <th>Email</th> <!-- Header tabel -->
+          <td>alvin.tnw@gmail.com</td> <!-- Data tabel -->
+        </tr>
+        <tr>
+          <th>Skill</th>  <!-- Header tabel -->
+          <td>1.Bahasa Pemrograman Python <br>  <!-- Data tabel -->
+              2.Html dan CSS <br>
+              3.Machine Learning</td>
+        </tr>
+        <tr>
+          <th>Pengalaman</th> <!--Header tabel -->
+          <td>1 tahun magang di google<br> <!-- Data tabel -->
+          1 tahun magang di univeristas tarumanagara</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
+
+ <!-- sumber mengerjakan  dari Mozila Developer Network (MDN) Web Docs -->
+ <!-- dan W3Schools -->
